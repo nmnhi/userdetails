@@ -1,0 +1,7 @@
+<div class="container" *ngFor="let product of products">
+  <div class="user-container">
+    <div class="user-name">{{ product.name }}</div>
+    <div class="user-job">{{ product.company }}</div>
+    <button (click)="OnClickedProduct(product)">Details</button>
+  </div>
+</div>

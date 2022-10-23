@@ -1,0 +1,13 @@
+<div class="container" *ngIf="product != undefined">
+  <div>
+    <img [src]="product.image" height="120" width="120" />
+  </div>
+  <div class="user-detail">
+    <p><b>Name: </b>{{ product.name }}</p>
+    <p><b>Company: </b>{{ product.company }}</p>
+    <p><b>Price: $</b>{{ product.price }}</p>
+    <p [ngStyle]="{ color: product.status === 'Active' ? 'green' : 'red' }">
+      <b>Status: </b>{{ product.status }}
+    </p>
+  </div>
+</div>
